@@ -1,4 +1,4 @@
-const API = 'http://localhost:8000';
+const API = window.location.origin.includes('localhost') ? 'http://localhost:8000' : window.location.origin;
 let jobId = null, poll = null, data = {};
 
 // Fill example
